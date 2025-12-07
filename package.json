@@ -1,6 +1,6 @@
 {
   "name": "react-cropper-aspect",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -17,6 +17,7 @@
     "@types/react": "^19.2.7",
     "react": "^19.2.1",
     "tslib": "^2.8.1",
+    "tsup": "^8.5.1",
     "typescript": "^5.9.3"
   },
   "repository": {
