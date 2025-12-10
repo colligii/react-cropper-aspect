@@ -3,7 +3,7 @@ import { CropConfig, ImageCropProps, OriginalImageSize, RenderImageSize } from "
 import Cropper from "./cropper";
 import { Canvas } from "./canvas";
 
-export const ImageCrop = ({ file, aspect, proportions, sizeConfig, step, confirmImage }: ImageCropProps) => {
+export const ImageCrop = ({ file, aspect, proportions, sizeConfig, step, confirmImage, canvasClassName }: ImageCropProps) => {
     
     const [renderSize, setRenderSize] = useState<RenderImageSize | null>(null);
     const originalImageSize = useRef<OriginalImageSize>(null);
@@ -44,6 +44,7 @@ export const ImageCrop = ({ file, aspect, proportions, sizeConfig, step, confirm
             renderSize={renderSize}
             sizeConfig={sizeConfig}
             step={step}
+            canvasClassName={canvasClassName}
         ></Canvas>        
     }
 

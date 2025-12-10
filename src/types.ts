@@ -13,7 +13,8 @@ export interface ImageCropProps {
     proportions: Proportions,
     sizeConfig: SizeConfig,
     step: ImageCropStepProps
-    confirmImage: ConfirmImageFunction
+    confirmImage: ConfirmImageFunction;
+    canvasClassName?: string;
 }
 
 export type ConfirmImageFunction = (file: File) => unknown

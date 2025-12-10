@@ -11,6 +11,7 @@ export interface ImageCropProps {
     sizeConfig: SizeConfig;
     step: ImageCropStepProps;
     confirmImage: ConfirmImageFunction;
+    canvasClassName?: string;
 }
 export type ConfirmImageFunction = (file: File) => unknown;
 export interface RenderImageSize {
